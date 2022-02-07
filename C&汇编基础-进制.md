@@ -1,10 +1,6 @@
 ---
-title: C&汇编基础-进制
+title: 进制
 date: 2021-3-31 14:18:28
-tags:
-- 逆向
-- 汇编
-cover_img: https://i.loli.net/2021/03/31/RBy2MFhQOira4Nl.jpg
 summary: 滴水逆向 3 期，进制的定义和运算学习笔记。
 ---
 # 进制的定义
