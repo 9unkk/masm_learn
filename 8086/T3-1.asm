@@ -1,0 +1,22 @@
+;程序名：T3-1.asm
+;功能：显示信息“HELLO”
+SSEG SEGMENT PARA STACK
+    DW 256 dup(?)
+SSEG ENDS
+
+DSEG SEGMENT
+MESS DB 'HELLO',0DH,0AH,'$'
+DSEG ENDS
+
+CSEG SEGMENT
+    ASSUME CS:CSEG,DS:DSEG
+start:
+    MOV AX,DSEG
+    MOV DS,AX
+    MOV DX,OFFSET MESS
+    MOV AH,9
+    INT 21H
+    MOV AH,4Ch
+    INT 21H
+CSEG ENDS
+    end start
